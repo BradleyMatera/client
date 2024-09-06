@@ -10,3 +10,16 @@
 /client/package-lock.json
 /client/pnpm-lock.yaml
 
+/server/
+
+/server/node_modules
+/server/pnpm-lock.yaml
+/server/package-lock.json
+
+
+
+
+
+
+
+
