@@ -1,7 +1,4 @@
 /client/node_modules
-/client/dist
-/client/build
-/client/public
 .DS_Store
 /client/.next
 /client/.env
