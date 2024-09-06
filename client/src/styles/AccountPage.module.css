@@ -1,0 +1,35 @@
+.accountPage {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'helvetica', sans-serif;
+}
+
+.accountPage h1 {
+    color: var(--primary-purple);
+    font-size: 2.5em;
+}
+
+.accountPage p {
+    font-size: 1.2em;
+}
+
+.accountDetails {
+    background: var(--secondary-gray);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.logoutButton {
+    margin-top: 20px;
+    background: var(--primary-purple);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.logoutButton:hover {
+    background: var(--primary-yellow);
+}

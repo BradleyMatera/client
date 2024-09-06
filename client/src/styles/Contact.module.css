@@ -1,0 +1,49 @@
+/* Add your styles for the Contact page here */
+
+.contact {
+  padding: 20px;
+  background-color: #ca3c3c;
+  color: #343a40;
+}
+
+.contact h1 {
+  font-size: 2.5em;
+}
+
+.contact p {
+  color: var(--white);
+  font-size: 1.2em;
+}
+
+.contactForm { /* Updated class name */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--secondary-gray);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contactForm label { /* Updated class name */
+  color: var(--secondary-navy);
+}
+
+.contactForm input,
+.contactForm textarea { /* Updated class name */
+  padding: 10px;
+  border: 1px solid var(--secondary-gray);
+  border-radius: 5px;
+}
+
+.contactForm button { /* Updated class name */
+  align-self: flex-end;
+  background: var(--primary-purple);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contactForm button:hover { /* Updated class name */
+  background: var(--primary-yellow);
+}

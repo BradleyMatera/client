@@ -1,0 +1,114 @@
+/* index.css */
+
+/* CSS Variables */
+:root {
+    --primary-blue: #007bff;
+    --primary-purple: #6f42c1;
+    --primary-yellow: #ffc107;
+    --primary-green: #28a745;
+    --secondary-gray: #f8f9fa;
+    --secondary-navy: #343a40;
+    --white: #ffffff;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-gray);
+    color: var(--secondary-navy);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+.header a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-purple);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Button Styles */
+.ctaButton {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.ctaButton:hover {
+    background-color: var(--primary-yellow);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .header,
+    .footer {
+        padding: 15px;
+    }
+
+    .ctaButton {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .home .productBox {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .home .productBox {
+        width: 100%;
+    }
+}

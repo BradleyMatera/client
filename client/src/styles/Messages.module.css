@@ -1,0 +1,16 @@
+/* Add your styles for the Messages module here */
+
+.message {
+    background-color: var(--secondary-gray);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message.success {
+    border-left: 5px solid var(--primary-green);
+}
+
+.message.error {
+    border-left: 5px solid var(--primary-red);
+}

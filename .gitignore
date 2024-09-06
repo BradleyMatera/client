@@ -1,0 +1,12 @@
+/client/node_modules
+/client/dist
+/client/build
+/client/public
+.DS_Store
+/client/.env
+/client/.next
+/client/next.config.mjs
+/client/tailwind.config.js
+/client/package-lock.json
+/client/pnpm-lock.yaml
+

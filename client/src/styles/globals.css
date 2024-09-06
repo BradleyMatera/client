@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-blue: #6EC1E4;
+    --primary-green: #8DC63F;
+    --primary-yellow: #F9C74F;
+    --primary-purple: #6A0572;
+    --secondary-gray: #E2E2E2;
+    --secondary-navy: #2C3E50;
+    --white: #FFFFFF;
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--white);
+    color: var(--secondary-navy);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional global styles can go here */

@@ -1,0 +1,19 @@
+.header {
+  background-color: var(--primary-blue);
+  padding: 20px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header a:hover {
+  color: var(--primary-yellow);
+}
