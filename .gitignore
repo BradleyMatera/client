@@ -1,6 +1,8 @@
 /client/node_modules
 .DS_Store
-/client/.next
+/client/.next/static
+/client/.next/server
+/client/.next/static
 /client/.env
 /server/
 
