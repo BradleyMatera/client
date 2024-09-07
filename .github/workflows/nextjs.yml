@@ -9,20 +9,25 @@ on:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node-version: [20]
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'  # Specify the Node.js version you want to use
-          cache: 'pnpm'  # Cache pnpm dependencies
+        uses: actions/checkout@v4
 
       - name: Install pnpm
-        run: npm install -g pnpm  # Install pnpm globally
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
       - name: Change directory to client
         run: cd client  # Navigate to the client directory
