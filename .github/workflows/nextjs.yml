@@ -42,7 +42,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd client # Navigate to the client directory
-          npm install # Use npm to install dependencies
+          npm install --legacy-peer-deps # Use npm to install dependencies with legacy peer deps
 
       - name: Build
         run: |
