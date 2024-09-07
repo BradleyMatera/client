@@ -47,9 +47,21 @@ Recoverynet is an e-commerce platform deeply rooted in supporting individuals on
 - **User Authentication**: Implement user authentication and authorization for secure access to features.
 
 📚 **Technology Stack**
-- **Frontend**: React, Next.js, Tailwind CSS
-- **Backend**: Node.js, Express, MongoDB
-- **Testing**: Jest, React Testing Library, Supertest
+- **Frontend**: 
+  - [React](https://reactjs.org/)
+  - [Next.js](https://nextjs.org/)
+  - [Tailwind CSS](https://tailwindcss.com/)
+- **Backend**: 
+  - [Node.js](https://nodejs.org/)
+  - [Express](https://expressjs.com/)
+  - [MongoDB](https://www.mongodb.com/)
+- **Testing**: 
+  - [Jest](https://jestjs.io/)
+  - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+  - [Supertest](https://github.com/visionmedia/supertest)
+
+📚 **Credits**
+- **Original Project**: This project is based on the [Printful Next.js Starter](https://github.com/lbsudo/printful-nextjs-starter/tree/main/app) by lbsudo, which provided a foundational structure for building e-commerce applications with Next.js.
 
 📚 **Conclusion**
 Recoverynet is a carefully crafted platform that not only provides products but also fosters a supportive community. Through thoughtful design, a calming color palette, and features tailored to the needs of individuals in recovery, it offers both a meaningful shopping experience and a place of encouragement and solidarity.
