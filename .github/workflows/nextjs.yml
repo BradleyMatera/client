@@ -23,19 +23,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'  # Specify the Node.js version you want to use
-          cache: 'npm'
+          cache: 'pnpm'  # Cache pnpm dependencies
+
+      - name: Install pnpm
+        run: npm install -g pnpm  # Install pnpm globally
 
       - name: Install dependencies
-        run: |
-          pnpm install  # Use pnpm to install dependencies
+        run: pnpm install  # Use pnpm to install dependencies
 
       - name: Build
-        run: |
-          pnpm run build  # Build the Next.js application
+        run: pnpm run build  # Build the Next.js application
 
       - name: Export
-        run: |
-          pnpm run export  # Export the Next.js application
+        run: pnpm run export  # Export the Next.js application
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
