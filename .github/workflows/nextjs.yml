@@ -11,6 +11,7 @@ on:
       - master  # Change this to your default branch if different
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
 
