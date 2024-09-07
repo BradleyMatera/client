@@ -36,17 +36,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          cache: 'pnpm'
+          cache-dependency-path: './client/pnpm-lock.yaml' # Adjust this path if necessary
 
       - name: Install dependencies
         run: |
-          cd client # Navigate to the client directory if necessary
-          npm install # or yarn install or pnpm install
+          cd client # Navigate to the client directory
+          pnpm install # Use pnpm to install dependencies
 
       - name: Build
         run: |
-          cd client # Navigate to the client directory if necessary
-          npm run build # or yarn build or pnpm run build
+          cd client # Navigate to the client directory
+          pnpm run build # Use pnpm to build the project
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
