@@ -2,16 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styles */
 :root {
     --primary-blue: #6EC1E4;
     --primary-green: #8DC63F;
-    --primary-yellow: #F9C74F;
-    --primary-purple: #6A0572;
-    --secondary-gray: #E2E2E2;
-    --secondary-navy: #2C3E50;
-    --white: #FFFFFF;
-    --font-primary: 'Lato', sans-serif;
-    --font-secondary: 'Merriweather', serif;
 }
 
 body {

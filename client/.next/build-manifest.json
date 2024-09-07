@@ -47,10 +47,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/checkout.js"
     ],
-    "/contact": [
+    "/profile": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/contact.js"
+      "static/chunks/pages/profile.js"
     ],
     "/shop": [
       "static/chunks/webpack.js",
