@@ -15,15 +15,15 @@ jobs:
         node-version: [20]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v2
         with:
-          version: 9
+          version: 8
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
@@ -34,5 +34,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install  # Use pnpm to install dependencies
 
-      - name: Deploy
-        run: pnpm run deploy  # Run the custom deploy command
+      - name: Build
+        run: pnpm run build  # Build the Next.js application
+
+      - name: Export
+        run: pnpm run export  # Export the Next.js application
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out  # Adjust this path if your export directory is different
