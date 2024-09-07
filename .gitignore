@@ -2,9 +2,12 @@
 .DS_Store
 /client/.next/static
 /client/.next/server
-/client/.next/static
 /client/.env
 /server/
+# Ensure lock files are not ignored
+!/client/package-lock.json
+!/client/yarn.lock
+!/client/pnpm-lock.yaml
 
 
 
