@@ -48,12 +48,18 @@ jobs:
         run: |
           cd client # Navigate to the client directory
           npm run build # Use npm to build the project
+          npm run export # If using static export
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: client/out # Adjust this path if necessary
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./client/out # Adjust this path if necessary
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   # Deployment job
   deploy:
