@@ -39,6 +39,9 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: './client/pnpm-lock.yaml' # Adjust this path if necessary
 
+      - name: Install pnpm
+        run: npm install -g pnpm # Install pnpm globally
+
       - name: Install dependencies
         run: |
           cd client # Navigate to the client directory
