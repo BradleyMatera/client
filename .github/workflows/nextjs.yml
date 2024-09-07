@@ -11,7 +11,6 @@ on:
       - master  # Change this to your default branch if different
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
 
@@ -27,6 +26,9 @@ jobs:
 
       - name: Install pnpm
         run: npm install -g pnpm  # Install pnpm globally
+
+      - name: Change directory to client
+        run: cd client  # Navigate to the client directory
 
       - name: Install dependencies
         run: pnpm install  # Use pnpm to install dependencies
